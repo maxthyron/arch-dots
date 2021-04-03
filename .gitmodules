@@ -1,3 +1,6 @@
 [submodule ".config/bspwm/bspswallow"]
 	path = .config/bspwm/bspswallow
 	url = https://github.com/JopStro/bspswallow
+[submodule ".themes/Nordic"]
+	path = .themes/Nordic
+	url = https://github.com/EliverLara/Nordic
