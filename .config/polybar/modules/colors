@@ -1,0 +1,24 @@
+[colors]
+background = #282e3a
+background-alt = #434c5e
+background-dimmed = #4c566a
+background-unfocused = #2e3440
+foreground = #eceff4
+foreground-alt = #d8dee9
+foreground-dimmed = #88c0d0
+primary = #8fbcbb
+secondary = #5e81ac
+alert = #bf616a
+
+cyan = #88C0D0
+aqua = #8FBCBB
+red = #BF616A
+yellow = #EBCB8B
+green = #A3BE8C
+orange = #D08770
+magenta = #BF616A
+white = #D8DEE9
+pink = #c394b4
+blue = #81a1c1
+
+; vim:ft=dosini

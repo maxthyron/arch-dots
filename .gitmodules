@@ -1,0 +1,3 @@
+[submodule ".config/bspwm/bspswallow"]
+	path = .config/bspwm/bspswallow
+	url = https://github.com/JopStro/bspswallow

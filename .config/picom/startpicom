@@ -1,0 +1,10 @@
+#!/bin/sh
+
+killall -q picom
+
+while pgrep -u "$(id -ur)" -x picom > /dev/null ; do sleep 1; done
+echo $(pgrep -u "$(id -ur)" -x picom)
+
+picom -b --experimental-backends &
+
+notify-send -u low "Loaded" -a "Picom"

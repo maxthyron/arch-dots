@@ -1,0 +1,25 @@
+#!/bin/sh
+
+killall -q polybar
+
+while pgrep -u "$(id -ur)" -x polybar > /dev/null; do sleep 1; done
+
+if $(pgrep -x picom > /dev/null); then
+    polybar -r main &
+else
+    polybar -r main-rounded &
+fi
+
+notify-send -u low "Loaded" -a "Polybar"
+
+external_monitor=$(xrandr --query | grep 'HDMI-0')
+if echo "$external_monitor" | grep -Fqe "connected"; then
+    if $(pgrep -x picom > /dev/null); then
+        polybar -r extra &
+    else
+        polybar -r extra-rounded &
+    fi
+
+    notify-send -u low "Loaded" -a "Polybar"
+fi
+
